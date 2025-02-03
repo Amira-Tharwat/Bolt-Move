@@ -1,0 +1,640 @@
+:root {
+    --nav-color: #82746E;
+    --orange-color: #FFC301;
+    --button-color: #111111;
+    --text-color: #757575;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+}
+
+.sidebar {
+    background-color: #222;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-drop-mina {
+    background-color: #222;
+    color: white;
+    font-size: 20px;
+}
+
+.btn-drop-mina:hover {
+    background-color: #444;
+
+}
+
+.accordion-button::after {
+    content: "\f078";
+    /* السهم للأسفل (FontAwesome) */
+    font-family: "Font Awesome 5 Free";
+    /* تأكد من أنك تستخدم مكتبة FontAwesome */
+    font-weight: 900;
+    margin-right: 10px;
+    color: white !important;
+}
+
+.item-drop-mina {
+    background-color: #222;
+    border: none;
+    border-bottom: solid white 1px;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.card-status-mina {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-status-mina i {
+    font-size: 30px;
+    margin-bottom: 2px;
+    color: var(--orange-color);
+}
+
+.top-bar {
+    /* background-color: #858889; */
+    background-color: #222;
+
+    color: var(--orange-color);
+    height: 100px;
+    padding: 25px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo-div-mina {
+    width: 15%;
+}
+
+.nav-things-mina {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+.nav-things-mina i {
+
+    color: #111111;
+}
+
+.profile-pic-mina {
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    border-bottom: solid 1px white;
+    margin-bottom: 5px;
+}
+
+.circular-img-prof-mina {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid var(--orange-color) 2px;
+
+}
+
+.sidebar a {
+    font-size: 20px;
+    border-bottom: solid 1px white;
+}
+
+.makar-mina {
+    padding-left: 60px;
+}
+
+.accordion-header {
+    color: white !important;
+}
+
+/* ----------- main page --- ----*/
+
+.header {
+    background-color: var(--orange-color);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.card-mina-main {
+    background-color: var(--orange-color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.table-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-mina-main i {
+    font-size: 30px;
+}
+
+/* -------------- profile admin ----------- */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.label-mina {
+    font-size: 30px;
+    font-weight: bold
+}
+
+.profile-details {
+    display: flex;
+    justify-content: end;
+}
+
+.parent-profile-mina button {
+    margin-top: 2%;
+    width: 100%;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px var(--text-color);
+}
+
+.parent-profile-mina button:hover {
+    background-color: var(--orange-color);
+
+}
+
+.form-control {
+    border: 1px solid var(--text-color);
+}
+
+.btn-amira {
+    background-color: #111111 !important;
+    width: 60%;
+    border: none !important;
+    box-shadow: 0 4px 8px var(--text-color) !important;
+}
+
+.btn-amira:hover {
+    background-color: #FFC301 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.div-btn-amira {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------------- amira ---------------------- */
+/* Header styling */
+.header-amira {
+    height: 135px;
+    background-color: var(--nav-color) !important;
+}
+
+/* Center the form */
+.container-wrapper {
+    height: calc(100vh - 135px);
+    /* Adjust height based on header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust margin to ensure proper spacing */
+.container-amira {
+    margin-top: 100px;
+}
+
+/* Styling for form title */
+.card h2 {
+    background: var(--button-color);
+    color: var(--orange-color);
+}
+
+/* Styling for form labels */
+.form-label {
+    color: var(--text-color);
+}
+
+/* Input fields */
+.form-control {
+    border: 1px solid var(--text-color);
+}
+
+/* Button styles */
+.btn-dark {
+    background: var(--button-color);
+    border: none;
+    color: var(--orange-color);
+}
+
+.btn-dark:hover {
+    background: var(--orange-color);
+    color: var(--button-color);
+}
+
+.tsgel-amira {
+    text-align: center;
+
+    --button-color: #ffffff;
+
+}
+
+.d5ol-amira {
+    width: 50%;
+    margin-right: 85px;
+
+    background-color: #111111;
+    --button-color: #ffffff;
+    color: white;
+    border-radius: 50px;
+
+}
+
+.border-form-amira {
+    border-radius: 50px;
+}
+
+.form-check-input-amira {
+    float: none !important;
+}
+
+.form-check-label-amira {
+    margin-right: 25px;
+}
+
+
+
+.card-body {
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.display-amira {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.custom-radio {
+    display: inline-flex;
+    /* or block if you want them stacked */
+    position: relative;
+    cursor: pointer;
+    margin-right: 15px;
+    /* Adjust spacing as needed */
+}
+
+.custom-radio input[type="radio"] {
+    opacity: 0;
+    /* Hide the default radio button */
+    position: absolute;
+    cursor: pointer;
+}
+
+.radio-checkmark {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    display: inline-block !important;
+    border-radius: 50%;
+    /* Make it round */
+    border: 2px solid #ccc;
+    /* Default border color */
+    background-color: #fff;
+    transition: background-color 0.2s;
+    /* Smooth transition */
+    margin-top: 5px;
+    margin-left: 5px
+}
+
+/* Checked Styles */
+.custom-radio input[type="radio"]:checked+.radio-checkmark {
+    border-color: transparent;
+    /* Remove the border when checked */
+    background-color: #FFC301;
+    /* Yellow fill */
+    margin-top: 2px;
+}
+
+/* Optional: Add an inner circle for visual appeal */
+.radio-checkmark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    /* Initially hidden */
+    transition: background-color 0.2s;
+    /* Smooth transition */
+}
+
+.custom-radio input[type="radio"]:checked+.radio-checkmark::after {
+    background-color: black;
+    /* Or a darker yellow */
+}
+
+.btn-amira {
+    background-color: #111111 !important;
+    width: 60%;
+    border: none !important;
+    box-shadow: 0 4px 8px var(--text-color) !important;
+}
+
+.btn-amira:hover {
+    background-color: #FFC301 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.div-btn-amira {
+    display: flex;
+    justify-content: center;
+}
+
+.able {
+    display: block !important;
+}
+
+.disable {
+    display: none !important;
+}
+
+.able-masrofat {
+    display: flex !important;
+
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: #d6d7d8 !important;
+    box-shadow: none !important;
+}
+
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.accordion-body-amira {
+    background-color: rgb(247, 247, 247);
+}
+
+.input-omola-moratb {
+    margin-top: 20px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+.body-froa {
+    font-family: 'Arial', sans-serif;
+    /* Or any preferred font */
+
+}
+
+.branch-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensure rounded corners don't get disrupted */
+}
+
+.branch-card-header {
+    background-color: #f0f0f0;
+    /* Light gray background */
+    padding: 15px;
+    text-align: center;
+    /* Center the branch name */
+}
+
+.branch-card-body {
+    padding: 20px;
+}
+
+.branch-info {
+    margin-bottom: 15px;
+}
+
+.branch-info i {
+    margin-left: 10px;
+    /* Space between icon and text */
+    color: #777;
+    /* Slightly darker icon color */
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.add-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #1e7e34;
+}
+
+.add-button i {
+    margin-right: 5px;
+}
+
+.map-container {
+    height: 200px;
+    /* Adjust as needed */
+    background-color: #eee;
+    /* Placeholder for the map */
+    border-radius: 5px;
+}
+
+.order-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+/* ---------------------------------------------- */
+/* ---------------- simon---------------------- */
+.manadeb-title-simon {
+    font-weight: bold;
+    color: #FFC301;
+    font-size: 30px;
+}
+
+.manadeb-title-simon2 {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+
+.button-title-simon3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 6%;
+    margin-top: 3%;
+}
+
+.title-mandob-simon3 {
+    display: flex;
+    align-items: center !important;
+}
+
+/* --------------------------------------------------- */
+/* ---------------- login edits -------------------------- */
+.container-amira {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------------- show details dlivary man --------------- */
+.div-btn-mina {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-mina {
+    width: 40%;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px var(--text-color);
+}
+
+.btn2-mina {
+    width: 30%;
+}
+
+.printer-mina {
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.swal2-container {
+    font-family: "Tajawal", sans-serif;
+    /* Arabic-friendly font */
+}
+
+.swal2-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.swal2-select,
+.swal2-input {
+    /* width: 100%; */
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.swal2-actions {
+    margin-top: 20px;
+}
+.text-simon{
+    background-color: white !important;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px !important;
+    margin-bottom: -20px !important;
+    color: #222 !important;
+}
+
+/* ////////////////////////////////////////////////////////////////////// */
+.div-btn-OrderDetails-momen{
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px !important;
+}
+.show-status-momen{
+    position: relative;
+}
+.show-status-momen:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    right: 8px; /* Adjust position based on icon */
+    top: 30px; /* Start below the current item */
+    width: 2px; /* Thickness of the line */
+    height: 40px; /* Space between items */
+    background: repeating-linear-gradient(
+        to bottom,
+        #aaaaaa 0px,
+        #aaaaaa 4px,
+        transparent 4px,
+        transparent 8px
+    ); /* Creates vertical dotted effect */
+}

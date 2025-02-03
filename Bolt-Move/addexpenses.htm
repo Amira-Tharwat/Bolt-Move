@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافة مصروفات</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="text-center profile-pic-mina">
+                    
+                    <div class="circular-img-prof-mina">
+                        <img src="Images/shahn.png" alt="company img">
+
+                    </div>
+                    <p>مريم نعيم</p>
+                </div>
+                <a href="main.html">🏠 الرئيسية</a>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu" aria-expanded="false" aria-controls="casesMenu" >
+                                🚚 الحالات
+                            </button>
+                        </h2>
+                        <div id="casesMenu" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    
+                                    <li><a href="index.html">جميع الحالات</a></li>
+
+                                    <li><a href="#">تم التسليم</a></li>
+                                    <li><a href="#">تم الإلغاء</a></li>
+                                    <li><a href="#">قيد الانتظار</a></li>
+                                    <li><a href="#">تم التأجيل</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu2" aria-expanded="false" aria-controls="casesMenu2" >
+                                💁‍♂ المستخدمين
+                            </button>
+                        </h2>
+                        <div id="casesMenu2" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">تاجر</a></li>
+                                    <li><a href="#">مندوب</a></li>
+                                    <li><a href="#">ادمن</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    📦 الطلبات
+                </a>
+                <a href="#">
+                    💰 المصروفات
+                </a>
+                <a href="#">
+                    📊 الإحصائيات
+                </a>
+                <a href="#">
+                    📍 المحافظات
+                </a>
+                <a href="#">
+                    🏢 الفروع
+                </a>
+                <a href="#">
+                    🔒 تسجيل الخروج
+                </a>
+                         
+            </nav>
+            <main class="col-md-9 col-lg-10">
+                <div class="top-bar">
+                    <div>
+                        <div class="makar-mina">
+                            <p class="nav-things-mina pt-3"> الاجمالي : -125</p>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-div-mina">
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                </div>
+                <div class="container mt-4">
+                    <div class="container mt-5 tager-amira">
+                        <div class="card">
+                            <div class="card-header ">
+                                <i style="color: #FFC301;" class="fa-solid fa-file-invoice-dollar"></i> اضافة مصروفات <span class="float-start"></span>
+                            </div>
+                            <div class="card-body">
+                                <form id="merchantForm">
+                                    <div class="mb-3 display-amira ">
+                                        <label class="form-label"> نوع المصروفات :</label>
+                                    
+                                        <label class="custom-radio">
+                                            <input type="radio" name="expenseType" id="masrofat-moratb" value="مرتب" checked>
+                                            <span class="radio-checkmark"></span> مرتب
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input type="radio" name="expenseType" id="masrofat-o5ra" value="مصروفات اخري" >
+                                            <span class="radio-checkmark" ></span> اخري                          </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="companyName" class="form-label">الأسم :</label>
+                                            <input type="text" class="form-control border-form-amira" id="companyName" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="date" class="form-label">التاريخ:</label>
+                                            <input type="date" class="form-control border-form-amira" id="date" value="2001-01-01">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 disable"  id="otherExpensesFields">
+                                        <div class="col-md-6">
+                                            <label for="details" class="form-label">التفاصيل:</label>
+                                            <input type="text" class="form-control border-form-amira" id="details">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="money" class="form-label">المبلغ:</label>
+                                            <input type="text" class="form-control border-form-amira" id="money">
+                                        </div>
+                                    </div>
+                                    <div  class="row mb-3 able-masrofat" id="salaryFields">
+                                        <div class="col-md-6">
+                                            <label class="form-label">المندوب:</label>
+                                            <select class="form-select border-form-amira">
+                                                <option>اسم المندوب</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">المرتب:</label>
+                                            <input type="text" class="form-control border-form-amira">
+                                        </div>
+                                    </div>
+                                
+
+                                    <div class="div-btn-amira">
+                                        <button type="submit" class="btn btn-primary btn-amira">أضافة</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        
+        </div>
+    </div>
+
+    
+    <script>
+        var salaryFields =document.getElementById("salaryFields")
+        var otherExpensesFields =document.getElementById("otherExpensesFields")
+        var masrofat_moratb=document.getElementById("masrofat-moratb")
+        var masrofat_o5ra=document.getElementById("masrofat-o5ra")
+
+
+        masrofat_moratb.addEventListener("click" , ()=>{
+            salaryFields.classList.remove("disable")
+            salaryFields.classList.add("able-masrofat")
+            otherExpensesFields.classList.add("disable")
+            otherExpensesFields.classList.remove("able-masrofat")
+        })
+
+        masrofat_o5ra.addEventListener("click" , ()=>{
+            salaryFields.classList.remove("able-masrofat")
+            salaryFields.classList.add("disable")
+            otherExpensesFields.classList.add("able-masrofat")
+            otherExpensesFields.classList.remove("disable")
+        })
+    </script>
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+     <script src="Js/main.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>

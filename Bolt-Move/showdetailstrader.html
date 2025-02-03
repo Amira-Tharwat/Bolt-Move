@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافةتاجر</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="text-center profile-pic-mina">
+                    
+                    <div class="circular-img-prof-mina">
+                        <img src="Images/shahn.png" alt="company img">
+
+                    </div>
+                    <p>مريم نعيم</p>
+                </div>
+                <a href="main.html">🏠 الرئيسية</a>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu" aria-expanded="false" aria-controls="casesMenu" >
+                                🚚 الحالات
+                            </button>
+                        </h2>
+                        <div id="casesMenu" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    
+                                    <li><a href="index.html">جميع الحالات</a></li>
+
+                                    <li><a href="#">تم التسليم</a></li>
+                                    <li><a href="#">تم الإلغاء</a></li>
+                                    <li><a href="#">قيد الانتظار</a></li>
+                                    <li><a href="#">تم التأجيل</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu2" aria-expanded="false" aria-controls="casesMenu2" >
+                                💁‍♂ المستخدمين
+                            </button>
+                        </h2>
+                        <div id="casesMenu2" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">تاجر</a></li>
+                                    <li><a href="#">مندوب</a></li>
+                                    <li><a href="#">ادمن</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    📦 الطلبات
+                </a>
+                <a href="#">
+                    💰 المصروفات
+                </a>
+                <a href="#">
+                    📊 الإحصائيات
+                </a>
+                <a href="#">
+                    📍 المحافظات
+                </a>
+                <a href="#">
+                    🏢 الفروع
+                </a>
+                <a href="#">
+                    🔒 تسجيل الخروج
+                </a>
+                         
+            </nav>
+            <main class="col-md-9 col-lg-10">
+                <div class="top-bar">
+                    <div>
+                        <div class="makar-mina">
+                            <p class="nav-things-mina pt-3"> الاجمالي : -125</p>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-div-mina">
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                </div>
+                <div class="container mt-5 tager-amira">
+                    <div class="card">
+                        <div class="card-header ">
+                            <i style="color: #FFC301;" class="fa-solid fa-user-plus"></i> تفاصيل التاجر <span class="float-start"></span>
+                        </div>
+                        <div class="card-body">
+                            <form id="merchantForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="companyName" class="form-label">اسم الشركة:</label>
+                                        <input type="text" disabled value="auto move" class="form-control border-form-amira" id="companyName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ownerName" class="form-label">اسم صاحب الشركة:</label>
+                                        <input type="text" disabled value="الاسطى عبده" class="form-control border-form-amira" id="ownerName" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">البريد الالكتروني:</label>
+                                        <input type="email" disabled value="abdoelbalf@gmail.com" class="form-control border-form-amira" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="password" class="form-label">كلمة المرور:</label>
+                                        <input type="password" disabled value="****" class="form-control border-form-amira" id="password" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">رقم التليفون:</label>
+                                        <input type="text" disabled value="01274329694" class="form-control border-form-amira" id="phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="address" class="form-label">العنوان:</label>
+                                        <input type="text" disabled value="korba" class="form-control border-form-amira" id="address" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label"> الفلوس المستحقه:</label>
+                                        <input type="text" disabled value="1000.00" class="form-control border-form-amira" id="phone" required>
+                                    </div>
+                                    <div class=" col-md-6 mb-3">
+                                        <label for="headquartersLocation" class="form-label">مقر الشركة (المحافظة):</label>
+                                        <input type="text" disabled value="القاهرة" class="form-control border-form-amira" id="address" required>
+    
+                                    </div>
+                                </div>
+                                
+                                
+                                
+            
+                        
+                                <div class="" id="habiby">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed btn-coll-amira" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                              الشحن العادي
+                                            </button>
+                                          </h2>
+                                          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body accordion-body-amira">
+                                                <div class="mb-3">
+                                                    
+                                                   
+                                                    <div class="row" id="normalShippingSelect">
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">القاهرة:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الجيزة:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">القليوبية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">المنوفية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الشرقية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الوادي الجديد:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الإسكندرية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">اسيوط:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">المنيا:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الاقصر:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">اسوان:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">قنا:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">البحيرة:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">بني سويف:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الغربية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira"  id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">البحر الاحمر:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الاسماعيلية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">شمال سيناء:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">جنوب سيناء:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">مطروح:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">سوهاج:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">دمياط:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الفيوم:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">كفر الشيخ:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">السويس:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">الدقهاية:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">بورسعيد:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                       
+                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              الشحن خلال 24 ساعة
+                                            </button>
+                                          </h2>
+                                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body accordion-body-amira">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label for="cairo24" class="form-label">القاهرة:</label>
+                                                        <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="giza24" class="form-label">الجيزة:</label>
+                                                        <input type="text" disabled class="form-control border-form-amira" id="giza24" value="150$">
+                                                    </div>
+                                                </div>
+            
+            
+            
+            
+            
+            
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header" id="headingThree">
+                                            <button  class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              الشحن في نفس اليوم
+                                            </button>
+                                          </h2>
+                                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body accordion-body-amira">
+                                                <div class="mb-3">
+                                                   
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label for="cairo24" class="form-label">القاهرة:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="cairo24" value="150$">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="giza24" class="form-label">الجيزة:</label>
+                                                            <input type="text" disabled class="form-control border-form-amira" id="giza24" value="150$">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="div-btn-mina mt-4 mb-4">
+                                    <button type="submit" class="btn btn-primary btn-mina btn2-mina">تعديل<i class="fas fa-edit me-2"></i></button>
+                                    <button type="submit" class="btn btn-danger btn-mina btn2-mina" onclick="showDeleteConfirmation()">حذف <i class="fas fa-trash me-2"></i></button>
+                                    <button type="submit" class="btn btn-success btn-mina btn2-mina" onclick="showNumberInput()">دفع المستحقات <i class="fas fa-money-bill-wave me-2"></i></button>
+                                </div>
+
+                            </form>
+                            <div class="mt-5">
+                            <h2 class="text-simon">عرض الطلبات</h2></div>
+                            <table class="table table-bordered text-center table-striped mt-5">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>رقم البوليصه</th>
+                                        <th>اسم الطلب</th>
+                                        <th>سعر الطلب</th>
+                                        <th>تاريخ دخول الطلب</th>
+                                        <th>حالة الطلب</th>
+                                        <th>اخرى</th>
+                                        
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>mascara cybal 3d</td>
+                                        
+                                        <td>1000.00</td>
+                                        <td>18-11-2002</td>
+                                        <td>تم التوصيل</td>
+                                        <td><button class="btn btn-primary btn-amira">التفاصيل</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>اندرو تيت</td>
+                                        <td>5000.00</td>
+                                        <td>22-11-2003</td>
+                                        <td>يتم التوصيل</td>
+                                        <td><button class="btn btn-primary btn-amira">التفاصيل</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+        </div>
+    </div>
+    <script>
+        function showDeleteConfirmation() {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+
+            swalWithBootstrapButtons.fire({
+                title: "هل انت متاكد من حذف المندوب؟!!",
+                text: "اذا حذفته لا يمكنك ارجاع بياناته مرة اخرى",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "حذف",
+                cancelButtonText: "خروج",
+                reverseButtons: true ,
+                
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    swalWithBootstrapButtons.fire({
+                        title: "تم الحذف بنجاح",
+                        text: "",
+                        icon: "success"
+                    });
+                }
+                
+            });
+        }
+        function showNumberInput() {
+            Swal.fire({
+                title: "أدخل رقمًا",
+                input: "number",
+                inputPlaceholder: "اكتب رقمًا هنا...",
+                showCancelButton: true,
+                confirmButtonText: "تأكيد",
+                cancelButtonText: "غلق",
+                customClass: {
+                    confirmButton: "btn btn-success me-2",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            }).then((result) => {
+                if (result.isConfirmed && result.value) {
+                    Swal.fire({
+                        title: "تم التأكيد",
+                        text: `لقد أدخلت الرقم: ${result.value}`,
+                        icon: "success"
+                    });
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    Swal.fire({
+                        title: "تم الإلغاء",
+                        text: "لم يتم إدخال أي رقم.",
+                        icon: "error"
+                    });
+                }
+            });
+        }
+    </script>
+
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+     <script src="Js/main.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>

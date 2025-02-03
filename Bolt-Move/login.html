@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+           
+            <main class="">
+                <div class="top-bar" dir="ltr">
+                    <div class="logo-div-mina" >
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                </div>
+                <div class=" container-amira">
+                    <div class="card p-4 shadow " style="max-width: 400px; width: 100%;">
+                        <h2 class="tsgel-amira">تسجيل الدخول</h2>
+                        <form >
+                            <div class="mb-3">
+                                <label for="username" class="form-label">اسم المستخدم</label>
+                                <input type="text" id="username" class="form-control border-form-amira" required>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">البريد الإلكتروني</label>
+                                <input type="email" id="email" class="form-control border-form-amira" required>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label for="password" class="form-label">كلمة المرور</label>
+                                <input type="password" id="password" class="form-control border-form-amira" required>
+                            </div>
+            
+                            <div class="form-check text-end">
+                                <input type="checkbox" class="form-check-input form-check-input-amira" id="showPassword" onclick="togglePassword()">
+                                <label class="form-check-label form-check-label-amira" for="showPassword">إظهار كلمة المرور</label>
+                                
+                            </div>
+            
+                            <button type="submit" class="btn btn-dark  mt-3 d5ol-amira">دخول</button>
+                        </form>
+                    </div>
+                </div>
+            
+                <script>
+                    function togglePassword() {
+                        var passwordField = document.getElementById("password");
+                        passwordField.type = passwordField.type === "password" ? "text" : "password";
+                    }
+                </script>
+            </main>
+        
+        </div>
+    </div>
+
+
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>

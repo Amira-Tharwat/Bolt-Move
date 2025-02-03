@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافة مندوب</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="text-center profile-pic-mina">
+
+                    <div class="circular-img-prof-mina">
+                        <img src="Images/shahn.png" alt="company img">
+
+                    </div>
+                    <p>مريم نعيم</p>
+                </div>
+                <a href="main.html">🏠 الرئيسية</a>
+                <div class="accordion" id="casesAccordion">
+                    <div class="accordion-item item-drop-mina">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-drop-mina" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#casesMenu" aria-expanded="false"
+                                aria-controls="casesMenu">
+                                🚚 الحالات
+                            </button>
+                        </h2>
+                        <div id="casesMenu" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+
+                                    <li><a href="index.html">جميع الحالات</a></li>
+
+                                    <li><a href="#">تم التسليم</a></li>
+                                    <li><a href="#">تم الإلغاء</a></li>
+                                    <li><a href="#">قيد الانتظار</a></li>
+                                    <li><a href="#">تم التأجيل</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="casesAccordion">
+                    <div class="accordion-item item-drop-mina">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed btn-drop-mina" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#casesMenu2" aria-expanded="false"
+                                aria-controls="casesMenu2">
+                                💁‍♂ المستخدمين
+                            </button>
+                        </h2>
+                        <div id="casesMenu2" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">تاجر</a></li>
+                                    <li><a href="#">مندوب</a></li>
+                                    <li><a href="#">ادمن</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    📦 الطلبات
+                </a>
+                <a href="#">
+                    💰 المصروفات
+                </a>
+                <a href="#">
+                    📊 الإحصائيات
+                </a>
+                <a href="#">
+                    📍 المحافظات
+                </a>
+                <a href="#">
+                    🏢 الفروع
+                </a>
+                <a href="#">
+                    🔒 تسجيل الخروج
+                </a>
+
+            </nav>
+            <main class="col-md-9 col-lg-10">
+                <div class="top-bar">
+                    <div>
+                        <div class="makar-mina">
+                            <p class="nav-things-mina pt-3"> الاجمالي : -125</p>
+                        </div>
+
+                    </div>
+                    <div class="logo-div-mina">
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                </div>
+                <div class="container mt-5 tager-amira">
+                    <div class="card">
+                        <div class="card-header ">
+                            <i style="color: #FFC301;" class="fa-solid fa-user-plus"></i> تفاصيل المندوب <span
+                                class="float-start"></span>
+                        </div>
+                        <div class="card-body">
+                            <form id="merchantForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="companyName" class="form-label">الأسم :</label>
+                                        <input type="text" disabled value="مينا مكرم"
+                                            class="form-control border-form-amira" id="companyName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">رقم التليفون:</label>
+                                        <input type="tel" disabled value="01274329694"
+                                            class="form-control border-form-amira" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">البريد الالكتروني:</label>
+                                        <input type="email" disabled value="mina@gmail.com"
+                                            class="form-control border-form-amira" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="password" class="form-label">كلمة المرور:</label>
+                                        <input type="password" disabled value="******"
+                                            class="form-control border-form-amira" id="password" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="address" class="form-label">العنوان:</label>
+                                        <input type="text" disabled value="korba" class="form-control border-form-amira"
+                                            id="address" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Work_province" class="form-label">محافظةالعمل:</label>
+                                        <input type="text" disabled value="القاهرة"
+                                            class="form-control border-form-amira" id="address" required>
+
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="headquartersLocation" class="form-label"> فرع الشركة اللي هيشتغل
+                                        فيه:</label>
+                                    <input type="text" title="Changes not allowed" disabled value="القاهرة" class="form-control border-form-amira"
+                                        id="address" required>
+                                </div>
+
+                                <div class="display-amira">
+                                    <div class="col-md-6 input-omola-moratb">
+                                        <label for="omola" class="form-label">العمولة علي كل اوردر :</label>
+                                        <input type="text" title="Changes not allowed" class="form-control border-form-amira" disabled value="20">
+                                    </div>
+                                    <div class="col-md-6 input-omola-moratb" id="moratb-num">
+                                        <label for="omola" class="form-label">المرتب:</label>
+                                        <input type="text" title="Changes not allowed" class=" form-control border-form-amira" disabled
+                                            value="5000">
+                                    </div>
+                                </div>
+
+                                <div class="div-btn-mina">
+                                    <button type="submit" class="btn btn-primary btn-mina" >تعديل<i class="fas fa-edit me-2"></i></button>
+                                    <button type="submit" class="btn btn-danger btn-mina" onclick="showDeleteConfirmation()">حذف <i class="fas fa-trash me-2"></i></button>
+                                </div>
+
+                            </form>
+                            <div class="mt-5">
+                                <h2 class="text-simon">عرض الطلبات</h2></div>
+                                <table class="table table-bordered text-center table-striped mt-5">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>رقم البوليصه</th>
+                                            <th>اسم الطلب</th>
+                                            <th>سعر الطلب</th>
+                                            <th>تاريخ دخول الطلب</th>
+                                            <th>حالة الطلب</th>
+                                            <th>اخرى</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>mascara cybal 3d</td>
+                                            
+                                            <td>1000.00</td>
+                                            <td>18-11-2002</td>
+                                            <td>تم التوصيل</td>
+                                            <td><button class="btn btn-primary btn-amira">التفاصيل</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>اندرو تيت</td>
+                                            <td>5000.00</td>
+                                            <td>22-11-2003</td>
+                                            <td>يتم التوصيل</td>
+                                            <td><button class="btn btn-primary btn-amira">التفاصيل</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+
+        </div>
+    </div>
+
+    <script>
+        function showDeleteConfirmation() {
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: "btn btn-success",
+                    cancelButton: "btn btn-danger"
+                },
+                buttonsStyling: false
+            });
+
+            swalWithBootstrapButtons.fire({
+                title: "هل انت متاكد من حذف المندوب؟!!",
+                text: "اذا حذفته لا يمكنك ارجاع بياناته مرة اخرى",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonText: "حذف",
+                cancelButtonText: "خروج",
+                reverseButtons: true ,
+                
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    swalWithBootstrapButtons.fire({
+                        title: "تم الحذف بنجاح",
+                        text: "",
+                        icon: "success"
+                    });
+                }
+                
+            });
+        }
+    </script>
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+    <script src="Js/main.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="text-center profile-pic-mina">
+                    
+                    <div class="circular-img-prof-mina">
+                        <img src="Images/shahn.png" alt="company img">
+
+                    </div>
+                    <p>مريم نعيم</p>
+                </div>
+                <a href="main.html">🏠 الرئيسية</a>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu" aria-expanded="false" aria-controls="casesMenu" >
+                                🚚 الحالات
+                            </button>
+                        </h2>
+                        <div id="casesMenu" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    
+                                    <li><a href="index.html">جميع الحالات</a></li>
+
+                                    <li><a href="#">تم التسليم</a></li>
+                                    <li><a href="#">تم الإلغاء</a></li>
+                                    <li><a href="#">قيد الانتظار</a></li>
+                                    <li><a href="#">تم التأجيل</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu2" aria-expanded="false" aria-controls="casesMenu2" >
+                                💁‍♂ المستخدمين
+                            </button>
+                        </h2>
+                        <div id="casesMenu2" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">تاجر</a></li>
+                                    <li><a href="#">مندوب</a></li>
+                                    <li><a href="#">ادمن</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    📦 الطلبات
+                </a>
+                <a href="#">
+                    💰 المصروفات
+                </a>
+                <a href="#">
+                    📊 الإحصائيات
+                </a>
+                <a href="#">
+                    📍 المحافظات
+                </a>
+                <a href="#">
+                    🏢 الفروع
+                </a>
+                <a href="#">
+                    🔒 تسجيل الخروج
+                </a>
+                         
+            </nav>
+            <main class="col-md-9 col-lg-10">
+                <div class="top-bar">
+                    <div>
+                        <div class="makar-mina">
+                            <p class="nav-things-mina pt-3"> الاجمالي : -125</p>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-div-mina">
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                   
+                </div>
+                <div class="header text-end">
+                    الصفحة الرئيسية
+                </div>
+            
+                <div class="container mt-4">
+                    <h2 class="text-center">لوحة التحكم</h2>
+                    <div class="row text-center mt-4">
+                        <div class="col-md-4">
+                            <div class="card-mina-main">
+                                <i class="fa-solid fa-building"></i>
+                                <h3>التجار</h3>
+                                <p>15</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-mina-main">
+                                <i class="fa-solid fa-user"></i>
+                                <h3>مندوب التوصيل</h3>
+                                <p>15</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-mina-main">
+                                <i class="fa-solid fa-box-open"></i>
+                                <h3>الطلبات</h3>
+                                <p>15</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="table-container mt-4">
+                        <h3 class="text-center mb-4">الشركات الأكثر تعاملًا</h3>
+                        <table class="table table-bordered text-center table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    
+
+                                    <th>اسم الشركة</th>
+                                    <th>الفلوس المستحقة</th>
+                                    <th>عدد الطلبات</th>
+                                    <th>مقر الشركة</th>
+                                    <th>تاريخ التعاقد</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>ورشة الأسطي عبده</td>
+                                    <td>الي عندك يزيد يجيب الأسطي</td>
+
+                                    <td>150</td>
+                                    <td>ورشانهم سيتي</td>
+                                    <td>1/1/2001</td>
+                                </tr>
+                                <tr>
+                                    <td>koko&s</td>
+                                    <td>60$</td>
+
+                                    <td>150</td>
+
+                                    <td>القاهرة</td>
+
+                                    <td>30/10/2060</td>
+
+
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>            </main>
+            
+        </div>
+    </div>
+
+
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+     <script src="Js/main.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>

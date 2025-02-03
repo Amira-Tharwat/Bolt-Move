@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافة مندوب</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="text-center profile-pic-mina">
+                    
+                    <div class="circular-img-prof-mina">
+                        <img src="Images/shahn.png" alt="company img">
+
+                    </div>
+                    <p>مريم نعيم</p>
+                </div>
+                <a href="main.html">🏠 الرئيسية</a>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu" aria-expanded="false" aria-controls="casesMenu" >
+                                🚚 الحالات
+                            </button>
+                        </h2>
+                        <div id="casesMenu" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    
+                                    <li><a href="index.html">جميع الحالات</a></li>
+
+                                    <li><a href="#">تم التسليم</a></li>
+                                    <li><a href="#">تم الإلغاء</a></li>
+                                    <li><a href="#">قيد الانتظار</a></li>
+                                    <li><a href="#">تم التأجيل</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu2" aria-expanded="false" aria-controls="casesMenu2" >
+                                💁‍♂ المستخدمين
+                            </button>
+                        </h2>
+                        <div id="casesMenu2" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">تاجر</a></li>
+                                    <li><a href="#">مندوب</a></li>
+                                    <li><a href="#">ادمن</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    📦 الطلبات
+                </a>
+                <a href="#">
+                    💰 المصروفات
+                </a>
+                <a href="#">
+                    📊 الإحصائيات
+                </a>
+                <a href="#">
+                    📍 المحافظات
+                </a>
+                <a href="#">
+                    🏢 الفروع
+                </a>
+                <a href="#">
+                    🔒 تسجيل الخروج
+                </a>
+                         
+            </nav>
+            <main class="col-md-9 col-lg-10">
+                <div class="top-bar">
+                    <div>
+                        <div class="makar-mina">
+                            <p class="nav-things-mina pt-3"> الاجمالي : -125</p>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-div-mina">
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                </div>
+                <div class="container mt-5 tager-amira">
+                    <div class="card">
+                        <div class="card-header ">
+                            <i style="color: #FFC301;" class="fa-solid fa-user-plus"></i> اضافة مندوب <span class="float-start"></span>
+                        </div>
+                        <div class="card-body">
+                            <form id="merchantForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="companyName" class="form-label">الأسم :</label>
+                                        <input type="text" class="form-control border-form-amira" id="companyName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">رقم التليفون:</label>
+                                        <input type="tel" class="form-control border-form-amira" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">البريد الالكتروني:</label>
+                                        <input type="email" class="form-control border-form-amira" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="password" class="form-label">كلمة المرور:</label>
+                                        <input type="password" class="form-control border-form-amira" id="password" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        <label for="address" class="form-label">العنوان:</label>
+                                        <input type="text" class="form-control border-form-amira" id="address" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="Work_province" class="form-label">محافظةالعمل:</label>
+                                        <select name="محافظةالعمل" class="form-select form-control border-form-amira" id="Work_province" required>
+                                            <option value="القاهرة">القاهرة</option>
+                                            <option value="الجيزة">الجيزة</option>
+                                            <option value="القليوبية">القليوبية</option>
+                                            <option value="الإسكندرية">الإسكندرية</option>
+                                            <option value="البحيرة">البحيرة</option>
+                                            <option value="كفر الشيخ">كفر الشيخ</option>
+                                            <option value="الغربية">الغربية</option>
+                                            <option value="المنوفية">المنوفية</option>
+                                            <option value="الدقهلية">الدقهلية</option>
+                                            <option value="الشرقية">الشرقية</option>
+                                            <option value="دمياط">دمياط</option>
+                                            <option value="بورسعيد">بورسعيد</option>
+                                            <option value="الإسماعيلية">الإسماعيلية</option>
+                                            <option value="السويس">السويس</option>
+                                            <option value="شمال سيناء">شمال سيناء</option>
+                                            <option value="جنوب سيناء">جنوب سيناء</option>
+                                            <option value="بني سويف">بني سويف</option>
+                                            <option value="الفيوم">الفيوم</option>
+                                            <option value="المنيا">المنيا</option>
+                                            <option value="أسيوط">أسيوط</option>
+                                            <option value="سوهاج">سوهاج</option>
+                                            <option value="قنا">قنا</option>
+                                            <option value="الأقصر">الأقصر</option>
+                                            <option value="أسوان">أسوان</option>
+                                            <option value="الوادي الجديد">الوادي الجديد</option>
+                                            <option value="مطروح">مطروح</option>
+                                            <option value="البحر الأحمر">البحر الأحمر</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mandobImage" class="form-label">صورة شخصية:</label>
+                                    <input class="form-control border-form-amira" type="file" id="mandobImage">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="headquartersLocation" class="form-label"> فرع الشركة اللي هيشتغل فيه:</label>
+                                    <select class="form-select border-form-amira" id="headquartersLocation">
+                                        <option value="cairo">القاهرة</option>
+                                        <option value="giza">الجيزة</option>
+                                        </select>
+                                </div>
+            
+                                <div class="mb-3 display-amira ">
+                                    <label class="form-label"> نوع التعامل :</label>
+                                   
+                                      <label class="custom-radio">
+                                        <input type="radio" name="moratb-or-omola" id="omola" value="omola" checked>
+                                        <span class="radio-checkmark"></span> عمولة علي كل اوردر فقط
+                                      </label>
+                                      <label class="custom-radio">
+                                        <input type="radio" name="moratb-or-omola" id="moratb" value="moratb" >
+                                        <span class="radio-checkmark" ></span> مرتب و عمولة علي كل اوردر
+                                      </label>
+                                </div>
+                               <div class="display-amira">
+                                    <div class="col-md-6 input-omola-moratb" >
+                                        <label for="omola" class="form-label">العمولة علي كل اوردر :</label>
+                                        <input type="text" class="form-control border-form-amira"  required>
+                                    </div>
+                                    <div class="col-md-6 input-omola-moratb disable" id="moratb-num">
+                                        <label for="omola" class="form-label">المرتب:</label>
+                                        <input type="text" class=" form-control border-form-amira"  required>
+                                    </div>
+                               </div>
+                              
+            
+                                <div class="div-btn-amira">
+                                    <button type="submit" class="btn btn-primary btn-amira">أضافة</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+                <script>
+                    var moratb_num=document.getElementById("moratb-num")
+                    var moratb=document.getElementById("moratb")
+                    var omola=document.getElementById("omola")
+            
+            
+                    omola.addEventListener("click" , ()=>{
+                        moratb_num.classList.remove("able")
+                        moratb_num.classList.add("disable")
+                    })
+            
+                    moratb.addEventListener("click" , ()=>{
+                        moratb_num.classList.add("able")
+                        moratb_num.classList.remove("disable")
+                    })
+                </script>
+            </main>
+        
+        </div>
+    </div>
+
+
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+    <script src="Js/main.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>

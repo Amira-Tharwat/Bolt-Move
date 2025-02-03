@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="images/Books.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin Dashboard </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="text-center profile-pic-mina">
+                    
+                    <div class="circular-img-prof-mina">
+                        <img src="Images/shahn.png" alt="company img">
+                    </div>
+                    
+                    <p>مريم نعيم</p>
+                </div>
+                <a href="main.html">🏠 الرئيسية</a>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu" aria-expanded="false" aria-controls="casesMenu" >
+                                🚚 الحالات
+                            </button>
+                        </h2>
+                        <div id="casesMenu" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    
+                                    <li><a href="index.html">جميع الحالات</a></li>
+
+                                    <li><a href="#">تم التسليم</a></li>
+                                    <li><a href="#">تم الإلغاء</a></li>
+                                    <li><a href="#">قيد الانتظار</a></li>
+                                    <li><a href="#">تم التأجيل</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="casesAccordion" >
+                    <div class="accordion-item item-drop-mina" >
+                        <h2 class="accordion-header">
+                            <button   class="accordion-button collapsed btn-drop-mina" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#casesMenu2" aria-expanded="false" aria-controls="casesMenu2" >
+                                💁‍♂ المستخدمين
+                            </button>
+                        </h2>
+                        <div id="casesMenu2" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">تاجر</a></li>
+                                    <li><a href="#">مندوب</a></li>
+                                    <li><a href="#">ادمن</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    📦 الطلبات
+                </a>
+                <a href="#">
+                    💰 المصروفات
+                </a>
+                <a href="#">
+                    📊 الإحصائيات
+                </a>
+                <a href="#">
+                    📍 المحافظات
+                </a>
+                <a href="#">
+                    🏢 الفروع
+                </a>
+                <a href="#">
+                    🔒 تسجيل الخروج
+                </a>
+                         
+            </nav>
+            <main class="col-md-9 col-lg-10">
+                <div class="top-bar">
+                    <div>
+                        <div class="makar-mina">
+                            <p class="nav-things-mina pt-3"> الاجمالي : -125</p>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-div-mina">
+                        <img src="Images/shahn.png" alt="auto move logo">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="button-title-simon3">
+                        <div dir="ltr" class="manadeb-title-simon3">
+                            <a href="addAdmin.html">
+                            <button class="add-button mt-4"><i class="fas fa-plus"></i>اضافة طلب</button></a>
+                
+                        </div>
+                        <div class="title-mandob-simon3" dir="ltr">
+                            <h1 class="manadeb-title-simon2">الطلبات <i class="fa-solid fa-cubes manadeb-title-simon"></i></h1> 
+                        </div>
+                    </div>
+            
+            
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <select id="searchType" class="form-select">
+                                <option value="1">اسم الطلب</option>
+                                <option value="4">رقم الطلب</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="searchInput" class="form-control" placeholder="ابحث هنا...">
+                        </div>
+                    </div>
+            
+                    <table class="table table-bordered text-center table-striped mt-5">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>رقم الطلب</th>
+                                <th>اسم الطلب</th>
+                                <th>سعر الطلب</th>
+                                <th> الحاله</th>
+                                <th> معلومات اخرى</th>
+                                <th> طباعة</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <tr>
+                                <td>11</td>
+                                
+                                <td>سيمون</td>
+                                <td>200</td>
+                                <td>جديد</td>
+
+                                <td>
+                                    <button class="btn btn-primary btn2-mina btn-amira">التفاصيل</button>
+                                    <button class="btn btn-primary btn2-mina" onclick="showOrderStatusInput()">تغيير الحالة</button>
+                                </td>
+                                <td><i class="fas fa-print printer-mina"></i></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                               
+                                <td>سيمون بردو</td>
+                                <td>100</td>
+                                <td>جديد</td>
+
+                                <td>
+                                    <button class="btn btn-primary btn2-mina btn-amira">التفاصيل</button>
+                                    <button class="btn btn-primary btn2-mina" onclick="showOrderStatusInput()">تغيير الحالة</button>
+                                </td>                 
+                                <td><i class="fas fa-print printer-mina"></i></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        
+        </div>
+    </div>
+
+
+    <script src="Js/bootstrap.bundle.min.js">
+    </script>
+     <script src="Js/main.js">
+    </script>
+    <script>
+        function showOrderStatusInput() {
+            Swal.fire({
+                title: "تغيير حالة الطلب",
+                html: `
+                    <div class="text-start">
+                        <label class="fw-bold">🔹 اختر حالة الطلب:</label>
+                        <select id="orderStatus" class="swal2-select" onchange="updateInputs()">
+                            <option value="" selected disabled>اختر الحالة...</option>
+                            <option value="جديد">🆕 جديد</option>
+                            <option value="تسليم الى مندوب">🚚 تسليم إلى مندوب</option>
+                            <option value="الى المخزن">🏢 إلى المخزن</option>
+                            <option value="تم الرفض">❌ تم الرفض</option>
+                        </select>
+                    </div>
+
+                    <div id="extraInputs" class="mt-3"></div>
+                `,
+                showCancelButton: true,
+                confirmButtonText: "✅ تأكيد",
+                cancelButtonText: "❌ إلغاء",
+                customClass: {
+                    confirmButton: "btn btn-success px-4",
+                    cancelButton: "btn btn-danger px-4"
+                },
+                buttonsStyling: false,
+                preConfirm: () => {
+                    const status = document.getElementById("orderStatus").value;
+                    let extraValue = "";
+
+                    if (status === "تسليم الى مندوب") {
+                        extraValue = document.getElementById("deliveryAgent").value;
+                    } else if (status === "الى المخزن") {
+                        extraValue = document.getElementById("branch").value;
+                    } else if (status === "تم الرفض") {
+                        extraValue = document.getElementById("rejectionReason").value;
+                    }
+
+                    if (!status) {
+                        Swal.showValidationMessage("⚠️ يرجى اختيار حالة الطلب!");
+                    } else if ((status === "تسليم الى مندوب" || status === "الى المخزن") && !extraValue) {
+                        Swal.showValidationMessage("⚠️ يرجى اختيار المندوب أو الفرع!");
+                    } else if (status === "تم الرفض" && !extraValue.trim()) {
+                        Swal.showValidationMessage("⚠️ يرجى إدخال سبب الرفض!");
+                    }
+
+                    return { status, extraValue };
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    let message = `<b>📌 الحالة:</b> ${result.value.status}`;
+                    if (result.value.extraValue) {
+                        message += `<br><b>📍 التفاصيل:</b> ${result.value.extraValue}`;
+                    }
+                    Swal.fire({
+                        title: "✅ تم التحديث!",
+                        html: message,
+                        icon: "success",
+                        confirmButtonText: "👍 فهمت",
+                        customClass: {
+                            confirmButton: "btn btn-primary px-4"
+                        }
+                    });
+                }
+            });
+        }
+
+        function updateInputs() {
+            const status = document.getElementById("orderStatus").value;
+            const extraInputs = document.getElementById("extraInputs");
+
+            if (status === "تسليم الى مندوب") {
+                extraInputs.innerHTML = `
+                    <label class="fw-bold">🚚 اختر المندوب:</label>
+                    <select id="deliveryAgent" class="swal2-select">
+                        <option value="" selected disabled>اختر المندوب...</option>
+                        <option value="أحمد">أحمد</option>
+                        <option value="محمد">محمد</option>
+                        <option value="خالد">خالد</option>
+                    </select>
+                `;
+            } else if (status === "الى المخزن") {
+                extraInputs.innerHTML = `
+                    <label class="fw-bold">🏢 اختر الفرع:</label>
+                    <select id="branch" class="swal2-select">
+                        <option value="" selected disabled>اختر الفرع...</option>
+                        <option value="الفرع الرئيسي">الفرع الرئيسي</option>
+                        <option value="فرع القاهرة">فرع القاهرة</option>
+                        <option value="فرع الاسكندرية">فرع الاسكندرية</option>
+                    </select>
+                `;
+            } else if (status === "تم الرفض") {
+                extraInputs.innerHTML = `
+                    <label class="fw-bold">❌ سبب الرفض:</label>
+                    <input id="rejectionReason" type="text" class="swal2-input" placeholder="اكتب السبب هنا...">
+                `;
+            } else {
+                extraInputs.innerHTML = "";
+            }
+        }
+    </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.3.0/flickity.pkgd.min.js">
+    </script>
+</body>
+
+</html>
